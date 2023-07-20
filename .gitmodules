@@ -1,6 +1,7 @@
 [submodule "modules/key"]
 	path = modules/key
-	url = git@gitlab.com:basedwon/key.git
+	url = git@gitlab.com:frenware/core/crpdo/key.git
+
 [submodule "modules/merkle"]
 	path = modules/merkle
-	url = git@gitlab.com:basedwon/merkle.git
+	url = git@gitlab.com:frenware/core/crpdo/merkle.git
