@@ -1,0 +1,12 @@
+{
+  "name": "crpdo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/crpdo.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "dependencies": {
+  },
+  "private": true
+}
