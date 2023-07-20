@@ -1,6 +1,6 @@
-[submodule "lib/modules/key"]
-	path = lib/modules/key
+[submodule "modules/key"]
+	path = modules/key
 	url = git@gitlab.com:basedwon/key.git
-[submodule "lib/modules/merkle"]
-	path = lib/modules/merkle
+[submodule "modules/merkle"]
+	path = modules/merkle
 	url = git@gitlab.com:basedwon/merkle.git
