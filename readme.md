@@ -2,8 +2,6 @@
 
 Crpdo is a comprehensive cryptographic library that simplifies complex cryptographic tasks. This library is a bundling of four submodules: Crypto, Key, Merkle, and Srp, which are exported under a common namespace.
 
-
-
 Crpdo is a comprehensive cryptographic library built for complex cryptographic tasks. It comprises multiple independent yet interrelated submodules, specifically, Crypto, Key, and Merkle, which work in harmony to enable high-level cryptographic functionalities.
 
 This project re-exports these submodules under a common namespace, providing a simple interface to interact with various cryptographic methods.
@@ -21,6 +19,14 @@ The Key module, `@basd/key`, provides functionalities to create and manipulate c
 ### Merkle
 
 The Merkle module, `@basd/merkle`, is responsible for creating Merkle trees, which are fundamental data structures in various cryptographic applications. 
+
+### Sss
+
+The `@basd/sss` submodule provides a simple API to use Shamir's Secret Sharing scheme by acting as a wrapper around `secrets.js-grempe`.
+
+### Srp
+
+The `@basd/srp` submodule is a part of the `crpdo` project and provides functionalities for Secure Remote Password (SRP) protocol-based authentication.
 
 ## Usage
 
