@@ -3,14 +3,20 @@
   "version": "0.0.0",
   "description": "",
   "main": "lib/crpdo.js",
+  "nodemonConfig": {
+    "watch": [
+      "../"
+    ]
+  },
   "scripts": {
     "dev": "nodemon ."
   },
-  "nodemonConfig": {
-    "watch": ["../"]
-  },
   "dependencies": {
-    "basd": "file:../basd"
+    "@basd/crypto": "file:modules/crypto",
+    "@basd/key": "file:modules/key",
+    "@basd/merkle": "file:modules/merkle",
+    "basd": "file:../basd",
+    "srp-js": "^0.2.1"
   },
   "private": true
 }

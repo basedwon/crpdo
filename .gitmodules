@@ -5,6 +5,11 @@
 [submodule "modules/merkle"]
 	path = modules/merkle
 	url = git@gitlab.com:frenware/core/crpdo/merkle.git
+
 [submodule "modules/crypto"]
 	path = modules/crypto
 	url = git@gitlab.com:frenware/core/crpdo/crypto.git
+
+[submodule "modules/srp"]
+	path = modules/srp
+	url = git@gitlab.com:frenware/core/crpdo/srp.git
