@@ -1,2 +1,0 @@
-# Based Secure Remote Password
-
