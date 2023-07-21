@@ -13,3 +13,6 @@
 [submodule "modules/srp"]
 	path = modules/srp
 	url = git@gitlab.com:frenware/core/crpdo/srp.git
+[submodule "modules/sss"]
+	path = modules/sss
+	url = git@gitlab.com:frenware/core/crpdo/sss.git
