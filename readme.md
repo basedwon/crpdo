@@ -1,8 +1,11 @@
 # Crpdo
 
-Crpdo is a comprehensive cryptographic library that simplifies complex cryptographic tasks. This library is a bundling of four submodules: Crypto, Key, Merkle, and Srp, which are exported under a common namespace.
+// @todo (key)
+  // don't return private keys?
+  // error handling
+  // comments
 
-Crpdo is a comprehensive cryptographic library built for complex cryptographic tasks. It comprises multiple independent yet interrelated submodules, specifically, Crypto, Key, and Merkle, which work in harmony to enable high-level cryptographic functionalities.
+Crpdo is a comprehensive cryptographic library that simplifies complex cryptographic tasks. It comprises multiple independent yet interrelated submodules, specifically, Crypto, Key, and Merkle, which work in harmony to enable high-level cryptographic functionalities.
 
 This project re-exports these submodules under a common namespace, providing a simple interface to interact with various cryptographic methods.
 

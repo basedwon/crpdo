@@ -16,3 +16,12 @@
 [submodule "modules/sss"]
 	path = modules/sss
 	url = git@gitlab.com:frenware/core/crpdo/sss.git
+[submodule "modules/time"]
+	path = modules/time
+	url = git@gitlab.com:frenware/core/crpdo/time.git
+[submodule "modules/ratchet"]
+	path = modules/ratchet
+	url = git@gitlab.com:frenware/core/crpdo/ratchet.git
+[submodule "modules/handshake"]
+	path = modules/handshake
+	url = git@gitlab.com:frenware/core/crpdo/handshake.git

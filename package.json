@@ -2,7 +2,28 @@
   "name": "crpdo",
   "version": "0.0.0",
   "description": "",
-  "main": "lib/crpdo.js",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basedwon/crpdo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basedwon/crpdo/issues"
+  },
+  "homepage": "https://github.com/basedwon/crpdo#readme",
+  "main": "./lib/crpdo.js",
+  "exports": {
+    ".": {
+      "browser": "./lib/crpdo.js",
+      "node": "./lib/crpdo-node.js"
+    },
+    "./*/": "./lib/*/",
+    "./*": "./lib/*.js"
+  },
+  "browser": {
+    ".": "./lib/crpdo.js"
+  },
   "nodemonConfig": {
     "watch": [
       "../"
@@ -16,7 +37,8 @@
     "@basd/key": "file:modules/key",
     "@basd/merkle": "file:modules/merkle",
     "@basd/srp": "file:modules/srp",
+    "@basd/sss": "file:modules/sss",
     "basd": "file:../basd"
   },
-  "private": true
+  "keywords": []
 }
