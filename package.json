@@ -33,11 +33,15 @@
     "dev": "nodemon ."
   },
   "dependencies": {
+    "@basd/coins": "file:modules/coins",
     "@basd/crypto": "file:modules/crypto",
+    "@basd/handshake": "file:modules/handshake",
     "@basd/key": "file:modules/key",
     "@basd/merkle": "file:modules/merkle",
+    "@basd/ratchet": "file:modules/ratchet",
     "@basd/srp": "file:modules/srp",
     "@basd/sss": "file:modules/sss",
+    "@basd/time": "file:modules/time",
     "basd": "file:../basd"
   },
   "keywords": []

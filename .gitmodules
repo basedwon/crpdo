@@ -25,3 +25,6 @@
 [submodule "modules/handshake"]
 	path = modules/handshake
 	url = git@gitlab.com:frenware/core/crpdo/handshake.git
+[submodule "modules/coins"]
+	path = modules/coins
+	url = git@gitlab.com:frenware/core/crpdo/coins.git
