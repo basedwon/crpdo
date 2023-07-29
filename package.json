@@ -24,13 +24,10 @@
   "browser": {
     ".": "./lib/crpdo.js"
   },
-  "nodemonConfig": {
-    "watch": [
-      "../"
-    ]
-  },
   "scripts": {
-    "dev": "nodemon ."
+    "dev:test": "nodemon -w .. -x npm test",
+    "dev": "nodemon -w .. ./test/crpdo.test.js",
+    "test": "testr test"
   },
   "dependencies": {
     "@basd/coins": "file:modules/coins",
@@ -42,7 +39,12 @@
     "@basd/srp": "file:modules/srp",
     "@basd/sss": "file:modules/sss",
     "@basd/time": "file:modules/time",
-    "basd": "file:../basd"
+    "basd": "^1.0.2"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.0.9",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
   },
   "keywords": []
 }

@@ -10,12 +10,6 @@
 	path = modules/crypto
 	url = git@gitlab.com:frenware/core/crpdo/crypto.git
 
-[submodule "modules/srp"]
-	path = modules/srp
-	url = git@gitlab.com:frenware/core/crpdo/srp.git
-[submodule "modules/sss"]
-	path = modules/sss
-	url = git@gitlab.com:frenware/core/crpdo/sss.git
 [submodule "modules/time"]
 	path = modules/time
 	url = git@gitlab.com:frenware/core/crpdo/time.git
