@@ -25,8 +25,8 @@
     ".": "./lib/crpdo.js"
   },
   "scripts": {
-    "dev:test": "nodemon -w .. -x npm test",
-    "dev": "nodemon -w .. ./test/crpdo.test.js",
+    "dev": "nodemon -w .. -x npm test",
+    "docs": "jsdoc2md lib/*.js > docs/api.md",
     "test": "testr test"
   },
   "dependencies": {
