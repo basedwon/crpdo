@@ -1,4 +1,4 @@
-> Those who know, know
+> those who know, know
 
 
 # crpdo: Cryptographic Library for JS
