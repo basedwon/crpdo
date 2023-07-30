@@ -91,5 +91,5 @@ jspm_packages/
 /.archive
 /modules/sss
 /modules/srp
-/modules/handshake
+/modules/shake
 /modules/ratchet
