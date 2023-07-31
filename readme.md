@@ -1,9 +1,17 @@
+# crpdo
+
 > those who know, know
 
+[![npm](https://img.shields.io/npm/v/crpdo?style=flat&logo=npm)](https://www.npmjs.com/package/crpdo)
+[![pipeline](https://gitlab.com/basedwon/crpdo/badges/master/pipeline.svg)](https://gitlab.com/basedwon/crpdo/-/pipelines)
+[![license](https://img.shields.io/npm/l/crpdo)](https://gitlab.com/basedwon/crpdo/-/blob/master/LICENSE)
+[![downloads](https://img.shields.io/npm/dw/crpdo)](https://www.npmjs.com/package/crpdo)
 
-# crpdo: Cryptographic Library for JS
+[![Gitlab](https://img.shields.io/badge/Gitlab%20-%20?logo=gitlab&color=%23383a40)](https://gitlab.com/basedwon/crpdo)
+[![Twitter](https://img.shields.io/badge/@crpdowon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
+[![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
-`crpdo` is a comprehensive Node.js and browser-based cryptography library, offering a wide range of cryptographic functions. It's built upon and extends the capabilities of TweetNaCl, providing an all-encompassing interface to work with various cryptographic methods.
+Crpdo is a comprehensive cryptographic library that simplifies complex cryptographic tasks. It comprises multiple independent yet interrelated submodules, specifically, Crypto, Key, and Merkle, which work in harmony to enable high-level cryptographic functionalities.
 
 ## Features
 
@@ -12,222 +20,88 @@
 - Extensive test coverage to ensure functionality and security
 - Cross-environment support: Node.js and the browser
 
-## Installation
-
-To install `crpdo` via npm, you can use the following command:
-
-```bash
-npm install crpdo
-```
-
-## Usage
-
-```javascript
-const crpdo = require('crpdo');
-
-// Example usage here...
-```
-
-> NOTE: See individual modules for specific usage examples.
-
 ## Modules
-
-- `coins`: This module provides... (Add a brief description of each module)
-  + CoinUtils is a utility class containing methods for working with different types of cryptocurrencies as part of the [crpdo](https://github.com/<YourGitHubUserName>/crpdo) project. This module is particularly helpful for tasks like getting coin type IDs, deriving paths for a coin symbol, and getting Bitcoin or Ethereum addresses for given public keys, among other tasks.
-- `crypto`: This module provides...
-- `handshake`: This module provides...
-- `key`: This module provides...
-- `merkle`: This module provides...
-- `ratchet`: This module provides...
-- `srp`: This module provides...
-- `sss`: This module provides...
-- `time`: This module provides...
-
-See each module's readme for more detailed information.
-
-## Testing
-
-To run the tests:
-
-```bash
-npm run test
-```
-
-## Contributing
-
-We welcome contributions from the open-source community. Please see [CONTRIBUTING.md](./docs/contributing.md) for more details on how to contribute to the project.
-
-## License
-
-This project is licensed under the terms of the XYZ license. See [LICENSE](LICENSE) for more details.
-
-## Support
-
-For questions, bugs, or feature requests, please open an issue on the GitHub repository.
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Crpdo
-
-Crpdo is a comprehensive cryptographic library that simplifies complex cryptographic tasks. It comprises multiple independent yet interrelated submodules, specifically, Crypto, Key, and Merkle, which work in harmony to enable high-level cryptographic functionalities.
 
 This project re-exports these submodules under a common namespace, providing a simple interface to interact with various cryptographic methods.
 
-## Submodules
-
 ### Crypto
 
-The Crypto module, `@basd/crypto`, provides a variety of cryptographic utilities. It serves as the foundation of the Crpdo library and is extended by the Crpdo class. It includes functions for encryption, decryption, and key manipulation.
+The Crypto module, `@crpdo/crypto`, provides a variety of cryptographic utilities. It serves as the foundation of the Crpdo library and is extended by the Crpdo class. It includes functions for encryption, decryption, and key manipulation.
 
 ### Key
 
-The Key module, `@basd/key`, provides functionalities to create and manipulate cryptographic keys. This includes creating signing keys, boxing keys, and multi-keys.
+The Key module, `@crpdo/key`, provides functionalities to create and manipulate cryptographic keys. This includes creating signing keys, boxing keys, and multi-keys.
 
 ### Merkle
 
-The Merkle module, `@basd/merkle`, is responsible for creating Merkle trees, which are fundamental data structures in various cryptographic applications. 
+The Merkle module, `@crpdo/merkle`, is responsible for creating Merkle trees, which are fundamental data structures in various cryptographic applications. 
 
-### Sss
+### Time
 
-The `@basd/sss` submodule provides a simple API to use Shamir's Secret Sharing scheme by acting as a wrapper around `secrets.js-grempe`.
+The Time module, `@crpdo/merkle`, provides time-related utilities primarily dealing with time-based one-time password (TOTP) generation, verification, and Network Time Protocol (NTP) calculations.
 
-### Srp
+### Coins
 
-The `@basd/srp` submodule is a part of the `crpdo` project and provides functionalities for Secure Remote Password (SRP) protocol-based authentication.
-
-## Usage
-
-Here is an example on how to use the Crpdo module:
-
-```javascript
-const Crpdo = require('crpdo')
-
-const { Crypto, Key, Merkle } = Crpdo
-
-// Now you can use Crypto, Key, and Merkle
-```
-
-Please refer to individual module documentation for detailed usage and examples.
+The Coins module, `@crpdo/coins`, contains methods for working with different types of cryptocurrencies like getting coin type IDs, deriving paths for a coin symbol, and getting Bitcoin or Ethereum addresses for given public keys, among other tasks.
 
 ## Installation
 
-To install the Crpdo library, run the following command in your project directory:
-
-```bash
-npm install crpdo
-```
-
-## Contributing
-
-Contributions to the Crpdo project are welcome. Please refer to the CONTRIBUTING.md file for more information.
-
-## License
-
-The Crpdo project is licensed under [MIT license](LICENSE).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# CRPDO - Cryptography in JS
-
-CRPDO is a powerful, modular JavaScript library for cryptography. This library leverages TweetNaCl for various cryptographic functions, with many functionalities modularized using git submodules and separate files and folders.
-
-## Installation
-
-Using npm:
-
-```bash
+```sh
 npm install crpdo
 ```
 
 ## Usage
 
-Require the library in your JavaScript file:
+Import the crpdo library directly:
 
-```javascript
-const CRPDO = require('crpdo');
+```js
+const Crypto = require('crpdo')
+
+const hash = Crypto.hash('foo')
+// much much more...
+const fooHash = hash('foo')
+// many algos
+const secureFoo = hash.sha3('foo')
 ```
 
-Use the library to perform various cryptographic functions.
+Import the submodules and crpdo through destructuring:
 
-```javascript
-const { Time, Crypto } = CRPDO;
+```js
+const { Crypto, Key, Merkle } = require('crpdo')
+// Now you can use Crypto, Key, and Merkle...
+```
 
-const secret = 'my_secret';
-const totpGap = 10;
-const now = Date.now();
+```js
+const { Time, Crypto } = Crypto
+
+const secret = 'my_secret'
 
 // Generate a TOTP
-const totp = Time.code(secret, totpGap, now);
-console.log(`Generated TOTP: ${totp}`);
+const totp = Time.code(secret)
+console.log(`Generated TOTP: ${totp}`)
 
-// Generate a hashed time-based code
-const hash = Time.hash(secret, totpGap, now);
-console.log(`Generated Hash: ${hash}`);
+// Validate the TOTP
+const isValid = Time.verify(totp, secret)
+console.log(`Valid TOTP: ${isValid}`) // => Valid TOTP: true
 
-// Perform more functions...
+// Many more functions...
 ```
 
-## Modules
+## Documentation
 
-CRPDO contains multiple modules to perform various cryptographic functions.
+- [API Reference](/docs/api.md)
 
-* `coins`: Crypto currency related functions.
-* `crypto`: Hashing, mnemonic generation, random number generation, and other crypto related functions.
-* `handshake`: Functions related to handshake protocol.
-* `key`: Key related functionalities including base key, box key, HD key, and signing key.
-* `merkle`: Merkle tree related functions.
-* `ratchet`: Ratchet protocol related functions.
-* `srp`: Secure Remote Password protocol related functions.
-* `sss`: Secret Sharing Scheme related functions.
-* `time`: Time related utilities, including NTP calculations and token verification.
+## Tests
 
-## Testing
-
-To run the tests for the CRPDO library, first install the development dependencies:
+In order to run the test suite, simply clone the repository and install its dependencies:
 
 ```bash
+git clone https://gitlab.com/basedwon/crpdo.git
+cd basd
 npm install
 ```
 
-Then, run the test script:
+To run the tests:
 
 ```bash
 npm test
@@ -235,10 +109,22 @@ npm test
 
 ## Contributing
 
-Contributions are welcome! Please read our [Contributing Guidelines](./docs/contributing.md) before submitting a pull request.
+Thank you! Please see our [contributing guidelines](/docs/contributing.md) for details.
+
+## Donations
+
+If you find this project useful and want to help support further development, please send us some coin. We greatly appreciate any and all contributions. Thank you!
+
+**Bitcoin (BTC):**
+```
+1JUb1yNFH6wjGekRUW6Dfgyg4J4h6wKKdF
+```
+
+**Monero (XMR):**
+```
+46uV2fMZT3EWkBrGUgszJCcbqFqEvqrB4bZBJwsbx7yA8e2WBakXzJSUK8aqT4GoqERzbg4oKT2SiPeCgjzVH6VpSQ5y7KQ
+```
 
 ## License
 
-CRPDO is [MIT licensed](./LICENSE).
-
-
+crpdo is [MIT licensed](https://gitlab.com/basedwon/crpdo/-/blob/master/LICENSE).
