@@ -1,6 +1,6 @@
 # crpdo
 
-> those who know, know
+> those who know, crpdo
 
 [![npm](https://img.shields.io/npm/v/crpdo?style=flat&logo=npm)](https://www.npmjs.com/package/crpdo)
 [![pipeline](https://gitlab.com/basedwon/crpdo/badges/master/pipeline.svg)](https://gitlab.com/basedwon/crpdo/-/pipelines)
