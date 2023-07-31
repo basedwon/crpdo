@@ -1,6 +1,6 @@
 {
   "name": "crpdo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A unified cryptographic library integrating diverse modules to provide robust and versatile cryptographic solutions for Node.js and the browser.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
