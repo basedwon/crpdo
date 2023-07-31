@@ -9,11 +9,13 @@ common namespace.
 
 * [Crpdo](#module_Crpdo)
     * [~Crpdo](#module_Crpdo..Crpdo) ⇐ <code>Crypto</code>
+        * [.Super](#module_Crpdo..Crpdo+Super) : <code>Crypto</code>
+        * [.Nacl](#module_Crpdo..Crpdo+Nacl) : <code>Nacl</code>
         * [.Crypto](#module_Crpdo..Crpdo+Crypto) : <code>Crypto</code>
         * [.Key](#module_Crpdo..Crpdo+Key) : <code>Key</code>
         * [.Merkle](#module_Crpdo..Crpdo+Merkle) : <code>Merkle</code>
         * [.Time](#module_Crpdo..Crpdo+Time) : <code>Time</code>
-        * [.hash](#module_Crpdo..Crpdo+hash) : <code>hash</code>
+        * [.Hash](#module_Crpdo..Crpdo+Hash) : <code>hash</code>
 
 <a name="module_Crpdo..Crpdo"></a>
 
@@ -26,12 +28,26 @@ submodules under a common namespace.
 **Extends**: <code>Crypto</code>  
 
 * [~Crpdo](#module_Crpdo..Crpdo) ⇐ <code>Crypto</code>
+    * [.Super](#module_Crpdo..Crpdo+Super) : <code>Crypto</code>
+    * [.Nacl](#module_Crpdo..Crpdo+Nacl) : <code>Nacl</code>
     * [.Crypto](#module_Crpdo..Crpdo+Crypto) : <code>Crypto</code>
     * [.Key](#module_Crpdo..Crpdo+Key) : <code>Key</code>
     * [.Merkle](#module_Crpdo..Crpdo+Merkle) : <code>Merkle</code>
     * [.Time](#module_Crpdo..Crpdo+Time) : <code>Time</code>
-    * [.hash](#module_Crpdo..Crpdo+hash) : <code>hash</code>
+    * [.Hash](#module_Crpdo..Crpdo+Hash) : <code>hash</code>
 
+<a name="module_Crpdo..Crpdo+Super"></a>
+
+#### crpdo.Super : <code>Crypto</code>
+The "instance" from @crpdo/crypto
+
+**Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  
+<a name="module_Crpdo..Crpdo+Nacl"></a>
+
+#### crpdo.Nacl : <code>Nacl</code>
+TweetNaCl suite of tools
+
+**Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  
 <a name="module_Crpdo..Crpdo+Crypto"></a>
 
 #### crpdo.Crypto : <code>Crypto</code>
@@ -62,9 +78,9 @@ time-based one-time password (TOTP) generation, verification, and
 Network Time Protocol (NTP) computations.
 
 **Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  
-<a name="module_Crpdo..Crpdo+hash"></a>
+<a name="module_Crpdo..Crpdo+Hash"></a>
 
-#### crpdo.hash : <code>hash</code>
+#### crpdo.Hash : <code>hash</code>
 The Hash module, provides multiple hashing algorithms
 
 **Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  

@@ -1,52 +1,97 @@
-const { _, log } = require('basd')
-const Pipe = require('basd/pipe')
-const Evented = require('basd/evented')
+const Crpdo = require('../lib/crpdo')
+const Crypto = require('../lib/crypto')
+const Coins = require('../lib/coins')
+const Merkle = require('../lib/merkle')
+const Key = require('../lib/key')
+const Time = require('../lib/time')
+const Hash = require('../lib/hash')
+const Mnemonic = require('../lib/mnemonic')
+const Nacl = require('../lib/nacl')
+const Random = require('../lib/random')
 
-const Crypto = require('../lib/crpdo-node')
+describe('Crpdo', () => {
+  describe('#Crypto', () => {
+    it('should load the Crypto submodule', () => {
+      expect(Crpdo.Crypto).to.exist
+    })
+  })
 
-async function test() {
-  
-  // const hex = '02a1633e2e78be181541c2a1e6f3a8aabc6f32a2eb6a7d29351ad230a2aa5e99f2'
-  // const bs = _.encode(Buffer.from(hex, 'hex'))
-  // log({ bs })
+  describe('#Key', () => {
+    it('should load the Key submodule', () => {
+      expect(Crpdo.Key).to.exist
+    })
+  })
 
-  
-  const events = new Evented()
-  events.on('data', data => log({ data }))
-  events.emit('data', 'foo')
-  // const stream = Pipe.line(Pipe(data => log({ data })))
-  // stream.push('foo')
-  // stream.push('bar')
-}
+  describe('#Merkle', () => {
+    it('should load the Merkle submodule', () => {
+      expect(Crpdo.Merkle).to.exist
+    })
+  })
 
-async function testV2() {
-  log(Crypto.hash('foo'))
-  log(Crypto.hash.md5('foo'))
-  log(Crypto.hash.sha1('foo'))
-  log(Crypto.hash.sha256('foo'))
-  log(Crypto.hash.sha3('foo'))
-  log(Crypto.hash.keccak('foo'))
-}
+  describe('#Time', () => {
+    it('should load the Time submodule', () => {
+      expect(Crpdo.Time).to.exist
+    })
+  })
 
-async function testV1() {
-  const key = new Key('foo')
-  const child = key.derive([44, 0, '0'])
-  // const child = key.derive(`44'/0'/0'/0`)
-  // const child = key.derive("goat'.cheese")
-  const first = child.ratchet()
-  const second = child.ratchet()
-  // const child = key.sub('m/goat/cheese')
-  // const sub = key.derive('foo')
-  // const first = sub.getKey(0)
-  // const sig = key.hd.sign('foo')
-  _.print(key)
-  // log(first.hd.deriveSoftened())
-  // log(first.hd.deriveSoftenedPublicKey())
-  // _.print(key.hd.verify('foo', sig, key.hd.publicKey))
-  // log(_.getMethods(Crypto, ['bind', 'toString', 'apply', 'call']))
-  // const goat = Crypto.hash({ foo: 'bar' })
-  // log(Mnemonic.createMnemonic('foo'))
-}
+  describe('#Mnemonic', () => {
+    it('should load the Mnemonic submodule', () => {
+      expect(Mnemonic).to.exist
+    })
+  })
 
-_.executor(test)
+  describe('#Nacl', () => {
+    it('should load the Nacl submodule', () => {
+      expect(Nacl).to.exist
+    })
+  })
 
+  describe('#Random', () => {
+    it('should load the Random submodule', () => {
+      expect(Random).to.exist
+    })
+  })
+
+  describe('#Hash', () => {
+    it('should load the Hash submodule', () => {
+      expect(Crpdo.hash).to.exist
+    })
+    it('should hash function', () => {
+      expect(Crpdo.hash('foo')).to.equal('9H5rVHEjFrZmKDojcKKBp4SycgRihyrckPYMnzPWAHvz')
+      expect(Crpdo.hash.sha3('foo')).to.equal('Gv5ZjJaU8XHVdccgxPKGHKaZnhrFPwECkqTrVV3aPcCk')
+    })
+  })
+
+  describe('#TypeChecks', () => {
+    it('should have Crypto submodule of the correct type', () => {
+      expect(Crpdo).to.equal(Crpdo.Crypto)
+    })
+
+    it('should have Key submodule of the correct type', () => {
+      expect(Key).to.equal(Crpdo.Key)
+    })
+    
+    it('should have Merkle submodule of the correct type', () => {
+      expect(Merkle).to.equal(Crpdo.Merkle)
+    })
+    
+    it('should have Time submodule of the correct type', () => {
+      expect(Time).to.equal(Crpdo.Time)
+    })
+
+    it('should have Hash submodule of the correct type', () => {
+      expect(Hash).to.equal(Crpdo.hash)
+    })
+  })
+
+  describe('#Integration', () => {
+    it('should perform a complex operation involving multiple submodules', () => {
+      const key = new Crpdo.Key('foo')
+      const encrypted = key.encrypt('bar')
+      const tree = new Crpdo.Merkle([encrypted])
+      expect(tree).to.exist
+      expect(tree).to.have.property('root')
+      expect(tree.root).to.not.be.empty
+    })
+  })
+})
