@@ -3,7 +3,7 @@
 ## Crpdo
 Crpdo is a comprehensive cryptographic library that simplifies 
 complex cryptographic tasks. This library is a bundling of four 
-submodules: Crypto, Key, Merkle, and Srp, which are exported under a 
+submodules: Crypto, Key, Merkle, and Time, which are exported under a 
 common namespace.
 
 
@@ -12,7 +12,8 @@ common namespace.
         * [.Crypto](#module_Crpdo..Crpdo+Crypto) : <code>Crypto</code>
         * [.Key](#module_Crpdo..Crpdo+Key) : <code>Key</code>
         * [.Merkle](#module_Crpdo..Crpdo+Merkle) : <code>Merkle</code>
-        * [.Srp](#module_Crpdo..Crpdo+Srp) : <code>Srp</code>
+        * [.Time](#module_Crpdo..Crpdo+Time) : <code>Time</code>
+        * [.hash](#module_Crpdo..Crpdo+hash) : <code>hash</code>
 
 <a name="module_Crpdo..Crpdo"></a>
 
@@ -28,7 +29,8 @@ submodules under a common namespace.
     * [.Crypto](#module_Crpdo..Crpdo+Crypto) : <code>Crypto</code>
     * [.Key](#module_Crpdo..Crpdo+Key) : <code>Key</code>
     * [.Merkle](#module_Crpdo..Crpdo+Merkle) : <code>Merkle</code>
-    * [.Srp](#module_Crpdo..Crpdo+Srp) : <code>Srp</code>
+    * [.Time](#module_Crpdo..Crpdo+Time) : <code>Time</code>
+    * [.hash](#module_Crpdo..Crpdo+hash) : <code>hash</code>
 
 <a name="module_Crpdo..Crpdo+Crypto"></a>
 
@@ -52,11 +54,17 @@ The Merkle module is responsible for creating Merkle trees, which
 are fundamental data structures in various cryptographic applications.
 
 **Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  
-<a name="module_Crpdo..Crpdo+Srp"></a>
+<a name="module_Crpdo..Crpdo+Time"></a>
 
-#### crpdo.Srp : <code>Srp</code>
-The Srp (Secure Remote Password) module provides functionalities for
-securely verifying passwords over a non-secure network connection 
-without sending the password itself.
+#### crpdo.Time : <code>Time</code>
+The Time module, `@crpdo/time`, provides utilities revolving around
+time-based one-time password (TOTP) generation, verification, and 
+Network Time Protocol (NTP) computations.
+
+**Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  
+<a name="module_Crpdo..Crpdo+hash"></a>
+
+#### crpdo.hash : <code>hash</code>
+The Hash module, provides multiple hashing algorithms
 
 **Kind**: instance property of [<code>Crpdo</code>](#module_Crpdo..Crpdo)  
