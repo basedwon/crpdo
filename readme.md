@@ -11,38 +11,38 @@
 [![Twitter](https://img.shields.io/badge/@crpdowon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
-Crpdo is a comprehensive cryptographic library that simplifies complex cryptographic tasks. It comprises multiple independent yet interrelated submodules, specifically, Crypto, Key, and Merkle, which work in harmony to enable high-level cryptographic functionalities.
+Crpdo, a unified cryptographic library, eases the intricacies of cryptographic tasks by integrating a diverse set of submodules. Each module - Crypto, Key, Merkle, and others - serves a unique purpose, and when combined, they deliver a robust cryptographic solution that caters to various security requirements.
 
 ## Features
 
-- A vast set of cryptographic methods
-- Includes `coins`, `crypto`, `handshake`, `key`, `merkle`, `ratchet`, `srp`, `sss`, and `time` modules.
+- Comprehensive suite of cryptographic methods
+- Incorporates an array of modules including `coins`, `crypto`, `key`, `merkle` and `time`, and more coming soon
 - Extensive test coverage to ensure functionality and security
 - Cross-environment support: Node.js and the browser
 
 ## Modules
 
-This project re-exports these submodules under a common namespace, providing a simple interface to interact with various cryptographic methods.
+Under a common namespace, Crpdo re-exports these submodules, thus offering a streamlined interface for engaging with a broad array of cryptographic operations.
 
 ### Crypto
 
-The Crypto module, `@crpdo/crypto`, provides a variety of cryptographic utilities. It serves as the foundation of the Crpdo library and is extended by the Crpdo class. It includes functions for encryption, decryption, and key manipulation.
+`@crpdo/crypto`, the Crypto module, constitutes the cornerstone of the Crpdo library, furnishing an assortment of cryptographic utilities. The Crpdo class enhances these functionalities to include encryption, decryption, and key manipulation.
 
 ### Key
 
-The Key module, `@crpdo/key`, provides functionalities to create and manipulate cryptographic keys. This includes creating signing keys, boxing keys, and multi-keys.
+The Key module, `@crpdo/key`, presents tools to generate and handle cryptographic keys, encompassing the creation of signing keys, boxing keys, and multi-keys.
 
 ### Merkle
 
-The Merkle module, `@crpdo/merkle`, is responsible for creating Merkle trees, which are fundamental data structures in various cryptographic applications. 
+The Merkle module, `@crpdo/merkle`, focuses on the construction of Merkle trees, a crucial data structure in numerous cryptographic systems. 
 
 ### Time
 
-The Time module, `@crpdo/merkle`, provides time-related utilities primarily dealing with time-based one-time password (TOTP) generation, verification, and Network Time Protocol (NTP) calculations.
+The Time module, `@crpdo/time`, provides utilities revolving around time-based one-time password (TOTP) generation, verification, and Network Time Protocol (NTP) computations.
 
 ### Coins
 
-The Coins module, `@crpdo/coins`, contains methods for working with different types of cryptocurrencies like getting coin type IDs, deriving paths for a coin symbol, and getting Bitcoin or Ethereum addresses for given public keys, among other tasks.
+The Coins module, `@crpdo/coins`, offers a host of methods to manage a variety of cryptocurrencies, such as deriving paths for coin symbols, obtaining coin type IDs, and generating Bitcoin or Ethereum addresses for specific public keys.
 
 ## Installation
 
