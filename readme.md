@@ -17,7 +17,7 @@ Crpdo, a unified cryptographic library, eases the intricacies of cryptographic t
 ## Features
 
 - Comprehensive suite of cryptographic methods
-- Incorporates an array of modules including `coins`, `crypto`, `key`, `merkle` and `time`, and more coming soon
+- Incorporates an array of modules including `coins`, `crypto`, `key`, `merkle` and `time`, and more...
 - Extensive test coverage to ensure functionality and security
 - Cross-environment support: Node.js and the browser
 
