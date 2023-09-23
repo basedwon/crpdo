@@ -18,7 +18,6 @@
       "browser": "./lib/crpdo.js",
       "node": "./lib/crpdo-node.js"
     },
-    "./*/": "./lib/*/",
     "./*": "./lib/*.js"
   },
   "browser": {
@@ -27,17 +26,20 @@
   "scripts": {
     "dev": "nodemon -w .. -x npm test",
     "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "update": "npm run update:prod && npm run update:dev",
+    "update:prod": "npm i -S @crpdo/crypto@latest @crpdo/key@latest @crpdo/merkle@latest @crpdo/time@latest basd@latest",
+    "update:dev": "npm i -D @basd/testr@latest",
     "test": "testr test"
   },
   "dependencies": {
-    "@crpdo/crypto": "^0.0.0",
-    "@crpdo/key": "^0.0.0",
-    "@crpdo/merkle": "^0.0.0",
+    "@crpdo/crypto": "^0.0.1",
+    "@crpdo/key": "^0.0.1",
+    "@crpdo/merkle": "^0.0.1",
     "@crpdo/time": "^0.0.0",
-    "basd": "^1.0.2"
+    "basd": "^1.0.8"
   },
   "devDependencies": {
-    "@basd/testr": "^0.0.9",
+    "@basd/testr": "^0.1.1",
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
   },
