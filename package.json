@@ -34,10 +34,10 @@
   },
   "dependencies": {
     "@crpdo/crypto": "^0.0.1",
-    "@crpdo/key": "^0.0.1",
+    "@crpdo/key": "^0.0.2",
     "@crpdo/merkle": "^0.0.1",
     "@crpdo/time": "^0.0.0",
-    "basd": "^1.0.8"
+    "basd": "^1.0.9"
   },
   "devDependencies": {
     "@basd/testr": "^0.1.1",
