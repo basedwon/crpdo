@@ -18,6 +18,7 @@
       "browser": "./lib/crpdo.js",
       "node": "./lib/crpdo-node.js"
     },
+    "./*/": "./lib/*/",
     "./*": "./lib/*.js"
   },
   "browser": {
