@@ -36,7 +36,7 @@
     "@crpdo/crypto": "^0.0.1",
     "@crpdo/key": "^0.0.2",
     "@crpdo/merkle": "^0.0.1",
-    "@crpdo/time": "^0.0.0",
+    "@crpdo/time": "^0.0.1",
     "basd": "^1.0.9"
   },
   "devDependencies": {
