@@ -22,7 +22,16 @@
     "./*": "./lib/*.js"
   },
   "browser": {
-    ".": "./lib/crpdo.js"
+    ".": "./lib/crpdo.js",
+    "coins": "./lib/coins.js",
+    "crypto": "./lib/crypto.js",
+    "hash": "./lib/hash.js",
+    "key": "./lib/key.js",
+    "merkle": "./lib/merkle.js",
+    "mnemonic": "./lib/mnemonic.js",
+    "nacl": "./lib/nacl.js",
+    "random": "./lib/random.js",
+    "time": "./lib/time.js"
   },
   "scripts": {
     "dev": "nodemon -w .. -x npm test",
@@ -33,14 +42,14 @@
     "test": "testr test"
   },
   "dependencies": {
-    "@crpdo/crypto": "^0.0.1",
-    "@crpdo/key": "^0.0.2",
-    "@crpdo/merkle": "^0.0.1",
-    "@crpdo/time": "^0.0.1",
-    "basd": "^1.0.9"
+    "@crpdo/crypto": "^0.0.3",
+    "@crpdo/key": "^0.0.3",
+    "@crpdo/merkle": "^0.0.2",
+    "@crpdo/time": "^0.0.2",
+    "basd": "^1.0.15"
   },
   "devDependencies": {
-    "@basd/testr": "^0.1.1",
+    "@basd/testr": "^0.1.2",
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
   },
