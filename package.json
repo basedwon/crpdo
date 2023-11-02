@@ -42,7 +42,7 @@
     "test": "testr test"
   },
   "dependencies": {
-    "@crpdo/crypto": "^0.0.5",
+    "@crpdo/crypto": "^0.0.6",
     "@crpdo/key": "^0.0.5",
     "@crpdo/merkle": "^0.0.4",
     "@crpdo/time": "^0.0.4",
